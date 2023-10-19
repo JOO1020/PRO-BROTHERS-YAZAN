@@ -129,17 +129,17 @@ let btn = document.getElementById("navBar");
 // console.log(menu);
 // console.log(collapse);
 // console.log(btn);
-menu.onclick= function () {
-  document.querySelector(".navbar .navbar-nav").classList.toggle("hide");
-}
+// menu.onclick= function () {
+//   document.querySelector(".navbar .navbar-nav").classList.toggle("hide");
+// }
 btn.onclick = function () {
   document.querySelector(".navbar .navbar-nav").classList.toggle("hide");
     
 };
-let x =function(){
-  document.querySelector(".navbar .navbar-nav").classList.toggle("hide");
+// let x =function(){
+//   document.querySelector(".navbar .navbar-nav").classList.toggle("hide");
 
-}
+// }
 
 
 // let navButton=document.querySelector(".collapse:not(.show)")
@@ -178,16 +178,24 @@ let x =function(){
 
 // dark mode function
 let boldText = document.querySelectorAll("b")
+let inputs = document.querySelectorAll("input")
+let message = document.querySelector("textarea")
+console.log(inputs);
 let links = document.querySelectorAll(".btn btn-light")
 let navBar = document.querySelector("nav")
 // console.log(boldText);
 let darkBtn = document.querySelector(".dark-btn")
 darkBtn.onclick = function(){
   document.body.classList.toggle("dark");
+  message.classList.toggle("dark")
   navBar.classList.toggle("dark")
   boldText.forEach((el,index)=>{
     el.classList.toggle("b-dark")
   })
+  inputs.forEach((el,index)=>{
+    el.classList.toggle("dark")
+  })
   localStorage.setItem("backgroundColor","dark")
 
 }
+//

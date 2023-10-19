@@ -914,3 +914,14 @@ b{
 .b-dark{
   color: #4b9def !important;
 }
+/*  */
+
+
+input[type="submit"] {
+  display: block;
+  padding: 12px 30px;
+  font-size: 14px;
+  background-color: #4b9def;
+  color: #fff;
+  border: none
+}
