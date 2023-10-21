@@ -179,7 +179,8 @@ btn.onclick = function () {
 // dark mode function
 let boldText = document.querySelectorAll("b")
 let inputs = document.querySelectorAll("input")
-let message = document.querySelector("textarea")
+let message = document.querySelectorAll("textarea")
+console.log(message);
 console.log(inputs);
 let links = document.querySelectorAll(".btn btn-light")
 let navBar = document.querySelector("nav")
@@ -187,15 +188,17 @@ let navBar = document.querySelector("nav")
 let darkBtn = document.querySelector(".dark-btn")
 darkBtn.onclick = function(){
   document.body.classList.toggle("dark");
-  message.classList.toggle("dark")
-  navBar.classList.toggle("dark")
+    navBar.classList.toggle("dark")
   boldText.forEach((el,index)=>{
     el.classList.toggle("b-dark")
   })
   inputs.forEach((el,index)=>{
     el.classList.toggle("dark")
   })
+  message.forEach((el,index)=>{
+    el.classList.toggle("dark")
+  })
   localStorage.setItem("backgroundColor","dark")
-
+  
 }
 //
