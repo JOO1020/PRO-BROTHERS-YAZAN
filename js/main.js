@@ -180,8 +180,8 @@ btn.onclick = function () {
 let boldText = document.querySelectorAll("b")
 let inputs = document.querySelectorAll("input")
 let message = document.querySelectorAll("textarea")
-console.log(message);
-console.log(inputs);
+// console.log(message);
+// console.log(inputs);
 let links = document.querySelectorAll(".btn btn-light")
 let navBar = document.querySelector("nav")
 // console.log(boldText);
