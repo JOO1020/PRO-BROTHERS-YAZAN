@@ -44,19 +44,17 @@
     <!-- Spinner End -->
 
 
- <!-- Navbar Start -->
- <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5 " style="background-color: #02245b !important; color:#fff !important;">
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5 " style="background-color: #02245b !important; color:#fff !important;">
     <img src="img/logo.png" class="logo" title="logo" alt="logo">
 
     <div style="display: flex; align-items: center;">
         <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" id="navBar">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon" style="background-color: transparent;"></span>
+
         </button>
-        <lord-icon
-        src="https://cdn.lordicon.com/ogkflacg.json"
-        colors="primary:#ffffff"
-        trigger="click"
-        class="dark-btn navbar-toggler me-0">   
+        
+        
     </div>
 <div class="collapse navbar-collapse" id="navbarCollapse">
 <div class="navbar-nav ms-auto p-4 p-lg-0">
@@ -92,8 +90,12 @@
     </div>
     <a href="index.html#testimonial" class="nav-item nav-link nav-menu">Testimonial</a>
     <a href="contact.html" class="nav-item nav-link">Contact</a>
+    <script src="https://kit.fontawesome.com/a7e9f794eb.js" crossorigin="anonymous"></script>
+    <div class="btn1_container dark-btn"  style="margin-top: 20px;">
+        <i class="fas fa-circle toggle-icon" style='font-size: 20px;'></i>
+    </div>
 
- 
+
 <!-- <a href="https://lordicon.com/">Icons by Lordicon.com</a> -->
             <!-- <i class="fa-solid fa-circle-half-stroke dark-btn"></i> -->
             <!-- <span class="material-symbols-outlined light-btn" style="display: none;">
@@ -173,9 +175,53 @@
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <form id="form">
                     <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" name="from_name" id="from_name"  class="form-control"  placeholder="Your Name">
+        <label for="from_name">Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" name="email" id="email"  type="email" class="form-control"  placeholder="Your Email">
+        <label for="email">Email</label>
+                        </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" name="type" id="type" class="form-control" placeholder="Tyoe">
+                                <label for="type">Type</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="number" name="phone_number" id="phone_number" class="form-control"  placeholder="Phone Number">
+            <label for="phone_number">Phone_Number</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+                                <label for="subject">Subject</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message here" id="message" class="form-control" type="text" name="message"
+                                        style="height: 150px"></textarea>
+                                        <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <input type="submit" id="button" value="Send Email" class="btn btn-primary px-4" >
+                        </div>
+                    </div>
+                </form>
+                
+                <!-- <form id="form">
+                    <div class="row g-3">
                         <div class="col-md-6">
                             <div class="form-floating">
-
                                 <input type="text" name="from_name" id="from_name"  class="form-control"  placeholder="Your Name">
             <label for="from_name">Name</label>
                             </div>
@@ -206,9 +252,7 @@
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <!-- <textarea type="text" name="message" id="message" class="form-control" placeholder="Leave a message here">
-                                <label for="message">Message</label>
-                                </textarea> -->
+                                
                                 <textarea class="form-control" placeholder="Leave a message here" id="message" class="form-control" type="text" name="message"
                                         style="height: 150px"></textarea>
                                         <label for="message">Message</label>
@@ -218,7 +262,8 @@
                             <input type="submit" id="button" value="Send Email" class="btn btn-primary px-4" >
                         </div>
                     </div>
-                </form>
+                </form> -->
+
             </div>
         </div>
     </div>
@@ -301,7 +346,12 @@
         </span></a>
 
     <!-- JavaScript Libraries -->
-
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('J-4oi6IjgyNeQ7F_p')
+  </script>
     <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -310,13 +360,11 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
     <script src="/js/contact.js"></script>
   
-  <script type="text/javascript">
-    emailjs.init('J-4oi6IjgyNeQ7F_p')
-  </script>
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

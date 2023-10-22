@@ -905,7 +905,7 @@ margin-bottom: 5px;
 
 }
 .dark{
-  background-color: #242526 !important;
+  background-color: #011028 !important;
   color: #ddd !important;
 
 }
@@ -940,8 +940,8 @@ input[type="submit"] {
 .btn2_container,
 .btn3_container {
   margin: 10px 0px;
-  width: 80px;
-  height: 36px;
+  width: 60px;
+  height: 25px;
   background-color: black;
   display: flex;
   position: relative;
@@ -966,7 +966,7 @@ input[type="submit"] {
 }
 
 .active1 {
-  transform: translateX(45px) rotate(350deg);
+  transform: translateX(35px) rotate(350deg);
   color: #fff;
 }
 
@@ -974,4 +974,14 @@ input[type="submit"] {
   background-color: #111;
   border-color: #111;
   /* box-shadow: -1px 3px 22px 0px rgba(255, 255, 255, 0.75); */
+}
+.marker{
+  font-size: 1.4rem;
+  color: var(--primary);
+}
+.flex-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
