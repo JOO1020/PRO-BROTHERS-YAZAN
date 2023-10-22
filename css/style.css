@@ -978,10 +978,17 @@ input[type="submit"] {
 .marker{
   font-size: 1.4rem;
   color: var(--primary);
+  margin-bottom: 20px;
 }
 .flex-nav{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+}
+.yazan-edit{
+  margin: 24px 1px;
+  font-size: 1.69rem;
+  color: #4b9def;
+
 }
