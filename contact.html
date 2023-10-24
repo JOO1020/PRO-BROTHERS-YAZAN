@@ -49,7 +49,7 @@
     <img src="img/logo.png" class="logo" title="logo" alt="logo">
 
     <div style="display: flex; align-items: center;">
-        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" id="navBar">
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" id="navBar" style="background: transparent !important;">
             <span class="navbar-toggler-icon" style="background-color: transparent;"></span>
 
         </button>
@@ -177,7 +177,7 @@
                     <div class="row g-3">
                     <div class="col-md-6">
                         <div class="form-floating">
-                            <input type="text" name="from_name" id="from_name"  class="form-control"  placeholder="Your Name">
+                            <input type="text" name="from_name" id="from_name"  class="form-control"  placeholder="Your Name" required>
         <label for="from_name">Name</label>
                         </div>
                     </div>
@@ -195,8 +195,8 @@
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <input type="number" name="phone_number" id="phone_number" class="form-control"  placeholder="Phone Number">
-            <label for="phone_number">Phone_Number</label>
+                                <input type="number" name="phone" id="phone" class="form-control"  placeholder="Phone Number" required>
+            <label for="phone">Phone_Number</label>
                             </div>
                         </div>
                         <div class="col-12">

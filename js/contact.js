@@ -26,7 +26,7 @@ document.getElementById('form')
 .addEventListener('submit', function(event) {
 event.preventDefault();
 
-    btn.value = 'Sending...';
+submitBtn.value = 'Sending...';
 
 const serviceID = 'default_service';
 const templateID = 'template_ruup8hn';

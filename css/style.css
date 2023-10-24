@@ -976,7 +976,7 @@ input[type="submit"] {
   /* box-shadow: -1px 3px 22px 0px rgba(255, 255, 255, 0.75); */
 }
 .marker{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--primary);
   margin-bottom: 20px;
 }
@@ -988,7 +988,7 @@ input[type="submit"] {
 }
 .yazan-edit{
   margin: 24px 1px;
-  font-size: 1.69rem;
+  font-size: 1.5rem;
   color: #4b9def;
 
 }
