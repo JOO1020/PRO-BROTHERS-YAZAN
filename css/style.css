@@ -1000,18 +1000,18 @@ video{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   margin: 1rem auto;
 }
-@media (max-width:991px){
+/* @media (max-width:991px){
   .video-div{
     margin: 1rem auto;
-  }
-}
+  } 
+}*/
 .form-floating{
   border: 1px solid #4b9def !important;
 }
 .video{
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
