@@ -886,7 +886,7 @@ b{
 
 }
 .w-100{
-  height:  calc(100vh - 80px) !important;
+  height:  calc(80vh - 80px) !important;
 }
 .flex-links{
   display: flex;
@@ -1007,4 +1007,11 @@ video{
   .video-div{
     margin: 1rem auto;
   }
+}
+.form-floating{
+  border: 1px solid #4b9def !important;
+}
+.video{
+  width: 80%;
+  margin: auto;
 }
