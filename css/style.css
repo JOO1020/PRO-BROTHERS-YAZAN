@@ -7,6 +7,8 @@
 }
 body{
   transition: 0.4s ease;
+  background-color: #011028;
+  color: #ddd;
 }
 .back-to-top {
   position: fixed;
@@ -904,10 +906,9 @@ cursor: pointer;
 margin-bottom: 5px;
 
 }
-.dark{
-  background-color: #011028 !important;
-  color: #ddd !important;
-
+.light{
+  background-color: #ddd !important;
+  color: #111 !important;
 }
 .b-dark{
   color: #4b9def !important;
@@ -953,6 +954,7 @@ input[type="submit"] {
 /* Style 1*/
 .btn1_container {
   border-color: #fff;
+  transform: rotate(180deg);
   cursor: pointer;
   border-radius: 50px;
   background-color: #fff;
@@ -966,7 +968,7 @@ input[type="submit"] {
 }
 
 .active1 {
-  transform: translateX(35px) rotate(350deg);
+  transform: translateX(35px) rotate(140deg);
   color: #fff;
 }
 
@@ -1008,8 +1010,14 @@ video{
     margin: 1rem auto;
   } 
 }*/
-.form-floating{
+.form-floating input ,.form-floating textarea{
+  /* border: none !important; */
   border: 1px solid #4b9def !important;
+  background-color: #011028;
+  border-radius: 10px;
+}
+.form-floating input ,.form-floating textarea:focus{
+  background-color: #011028 !important;
 }
 /* .video{
   width: 100%;

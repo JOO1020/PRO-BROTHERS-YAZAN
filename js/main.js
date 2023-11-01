@@ -210,8 +210,8 @@ btn1_ctn.addEventListener("click", () => {
   one.classList.toggle("fa-moon");
   one.classList.toggle("active1");
   btn1_ctn.classList.toggle("changeBg");
-  document.body.classList.toggle("dark");
-      navBar.classList.toggle("dark")
+  document.body.classList.toggle("light");
+      navBar.classList.toggle("light")
     boldText.forEach((el,index)=>{
       el.classList.toggle("b-dark")
     })
