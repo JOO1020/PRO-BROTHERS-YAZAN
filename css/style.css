@@ -10,6 +10,10 @@ body{
   background-color: #011028;
   color: #ddd;
 }
+.light{
+  background-color: #fff !important;
+  color: #111 !important;
+}
 .back-to-top {
   position: fixed;
   display: none;
@@ -485,15 +489,15 @@ h6,
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--secondary);
-  background: #ffffff;
+  color: var(--light);
+  background: #4b9def;
   border: none;
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.09);
   z-index: 2;
 }
 
 .service-item .btn:hover {
-  color: #ffffff;
+  color: #000;
   background: var(--primary);
 }
 
@@ -906,10 +910,7 @@ cursor: pointer;
 margin-bottom: 5px;
 
 }
-.light{
-  background-color: #ddd !important;
-  color: #111 !important;
-}
+
 .b-dark{
   color: #4b9def !important;
 }
@@ -1013,11 +1014,12 @@ video{
 .form-floating input ,.form-floating textarea{
   /* border: none !important; */
   border: 1px solid #4b9def !important;
-  background-color: #011028;
+  background:transparent;
+  /* color: #4b9def; */
   border-radius: 10px;
 }
 .form-floating input ,.form-floating textarea:focus{
-  background-color: #011028 !important;
+  background-color: transparent !important;
 }
 /* .video{
   width: 100%;
