@@ -177,7 +177,7 @@ btn.onclick = function () {
 // 
 
 // dark mode function
-let boldText = document.querySelectorAll("b")
+// let boldText = document.querySelectorAll("b")
 let inputs = document.querySelectorAll("input")
 // let message = document.querySelectorAll("textarea")
 // // console.log(message);
@@ -205,20 +205,77 @@ let inputs = document.querySelectorAll("input")
 // Style 1
 const btn1_ctn = document.getElementsByClassName("btn1_container")[0];
 const one = document.querySelector(".fas");
-btn1_ctn.addEventListener("click", () => {
+
+
+// btn1_ctn.addEventListener("click", () => {
+//   one.classList.toggle("fa-circle");
+//   one.classList.toggle("fa-moon");
+//   one.classList.toggle("active1");
+//   btn1_ctn.classList.toggle("changeBg");
+//   document.body.classList.toggle("light");
+//       navBar.classList.toggle("light")
+//     boldText.forEach((el,index)=>{
+//       el.classList.toggle("b-dark")
+//     })
+//     inputs.forEach((el,index)=>{
+//       el.classList.toggle("dark")
+//     })
+    // save local
+    // localStorage.setItem("pageTheme",JSON.stringify(theme));
+
+function darkMode(){
+  // var setItem = document.body;
   one.classList.toggle("fa-circle");
   one.classList.toggle("fa-moon");
   one.classList.toggle("active1");
   btn1_ctn.classList.toggle("changeBg");
-  document.body.classList.toggle("light");
-      navBar.classList.toggle("light")
-    boldText.forEach((el,index)=>{
-      el.classList.toggle("b-dark")
-    })
-    inputs.forEach((el,index)=>{
-      el.classList.toggle("dark")
-    })
-});
+  document.body.classList.toggle("light_mode");
+      navBar.classList.toggle("light_mode")
+  var theme;
+  if (document.body.classList.contains("light_mode")){
+    theme="Dark"
+  }else{
+    theme="Light"
+    
+    }
+  // save to localStorage
+  localStorage.setItem("pageTheme",JSON.stringify(theme))
+
+} 
+let getTheme = JSON.parse(localStorage.getItem("pageTheme")) 
+if(getTheme==="Dark"){
+  one.classList.toggle("fa-circle");
+  one.classList.toggle("fa-moon");
+  one.classList.toggle("active1");
+  btn1_ctn.classList.toggle("changeBg");
+  document.body.classList.toggle("light_mode");
+  navBar.classList.toggle("light_mode")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// boldText.forEach((el,index)=>{
+    //   el.classList.toggle("b-dark")
+    // })
+    // inputs.forEach((el,index)=>{
+    //   el.classList.toggle("dark")
+    // })
+
+
+
+
 // Style 1
 // const btn1_ctn = document.getElementsByClassName("btn1_container")[0];
 // const one = document.querySelector(".fas");

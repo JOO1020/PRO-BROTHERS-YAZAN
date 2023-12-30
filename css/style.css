@@ -10,7 +10,8 @@ body{
   background-color: #011028;
   color: #ddd;
 }
-.light{
+
+.light_mode{
   background-color: #fff !important;
   color: #111 !important;
 }
@@ -1028,5 +1029,5 @@ video{
   margin: auto;
 } */
 .ft{
-  font-size: 1.2rem !important;
+  font-size: 1.4rem !important;
 }
